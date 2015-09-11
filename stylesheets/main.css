@@ -1,0 +1,184 @@
+/*
+  Built Mobile First: All Generic sizing and layouts are placed in main part of CSS. All sizing and layout changes specific to screen sizes is down in media-query area.
+  All color based things are seperate to allow for tweaking later out.
+*/
+
+/**********************************
+GENERAL
+***********************************/
+
+body{
+  font-family: "Helvetica", "Arial";
+}
+
+/*This is for the cover. MUST CHANGE THE THING IN THE CENTER*/
+#cover{
+  background: url("http://www.aveva.com/Images/ajax-loader.gif") no-repeat scroll center center #333333;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/**********************************
+NAVIGATION - Layout and Sizing
+***********************************/
+nav{
+  width:100%;
+  display: inline-block;
+}
+
+#top_logo{
+  float: left;
+  margin: 15px;
+  font-size: 5rem;
+}
+
+#menu_button{
+  float: right;
+  margin: 30px;
+  font-size: 3rem;
+}
+
+/**********************************
+HEADER
+***********************************/
+
+#landing_page_header{
+  background: url('../img/landing_page_header1.JPG') no-repeat center;
+  background-size: cover;
+  height:600px;
+  padding-top:50px;
+  margin-top: -50px;
+}
+
+header h1{
+  text-align: center;
+  margin:0 auto;
+  padding-top: 220px;
+  font-size: 5em;
+  font-family: 'greyscalebasicregular';
+}
+
+.arrow{
+  width:40px;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+/**********************************
+MAIN CONTENT  - Layout and Sizing
+***********************************/
+
+
+/**********************************
+FOOTER - Layout and Sizing
+***********************************/
+
+
+/**********************************
+PAGE: _______
+***********************************/
+
+
+/**********************************
+MEDIA QUIERIES - For resizing based on screen size. Mobile First
+***********************************/
+@media screen and (max-width: 480px) {
+  #top_logo{
+    float: left;
+    margin: 15px;
+    font-size: 3rem;
+  }
+
+  #menu_button{
+    float: right;
+    margin: 15px;
+    font-size: 3rem;
+  }
+  header h1{
+    padding-top: 180px;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+}
+
+@media screen and (min-width: 721px) {
+
+}
+
+/**********************************
+FONTS
+***********************************/
+@font-face {
+    font-family: 'greyscalebasicregular';
+    src: url('../web_fonts/greyscalebasic_regular_macroman/Greyscale_Basic_Regular-webfont.eot');
+    src: url('../web_fonts/greyscalebasic_regular_macroman/Greyscale_Basic_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web_fonts/greyscalebasic_regular_macroman/Greyscale_Basic_Regular-webfont.woff') format('woff'),
+         url('../web_fonts/greyscalebasic_regular_macroman/Greyscale_Basic_Regular-webfont.ttf') format('truetype'),
+         url('../web_fonts/greyscalebasic_regular_macroman/Greyscale_Basic_Regular-webfont.svg#greyscalebasicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'greyscalebasicitalic';
+    src: url('../web_fonts/greyscalebasic_italic_macroman/Greyscale_Basic_Regular_Italic-webfont.eot');
+    src: url('../web_fonts/greyscalebasic_italic_macroman/Greyscale_Basic_Regular_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web_fonts/greyscalebasic_italic_macroman/Greyscale_Basic_Regular_Italic-webfont.woff') format('woff'),
+         url('../web_fonts/greyscalebasic_italic_macroman/Greyscale_Basic_Regular_Italic-webfont.ttf') format('truetype'),
+         url('../web_fonts/greyscalebasic_italic_macroman/Greyscale_Basic_Regular_Italic-webfont.svg#greyscalebasicitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'greyscalebasicbold_italic';
+    src: url('../web_fonts/greyscalebasic_bolditalic_macroman/Greyscale_Basic_Bold_Italic-webfont.eot');
+    src: url('../web_fonts/greyscalebasic_bolditalic_macroman/Greyscale_Basic_Bold_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web_fonts/greyscalebasic_bolditalic_macroman/Greyscale_Basic_Bold_Italic-webfont.woff') format('woff'),
+         url('../web_fonts/greyscalebasic_bolditalic_macroman/Greyscale_Basic_Bold_Italic-webfont.ttf') format('truetype'),
+         url('../web_fonts/greyscalebasic_bolditalic_macroman/Greyscale_Basic_Bold_Italic-webfont.svg#greyscalebasicbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'greyscalebasicbold';
+    src: url('../web_fonts/greyscalebasic_bold_macroman/Greyscale_Basic_Bold-webfont.eot');
+    src: url('../web_fonts/greyscalebasic_bold_macroman/Greyscale_Basic_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web_fonts/greyscalebasic_bold_macroman/Greyscale_Basic_Bold-webfont.woff') format('woff'),
+         url('../web_fonts/greyscalebasic_bold_macroman/Greyscale_Basic_Bold-webfont.ttf') format('truetype'),
+         url('../web_fonts/greyscalebasic_bold_macroman/Greyscale_Basic_Bold-webfont.svg#greyscalebasicbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/**********************************
+COLORS
+  Darkest Purple: #250745;
+  Darker Purple: #390B6B;
+  Base Purple: #470d85;
+  Slightly Lighter than Base Purple: #4E0E92;
+  Lighter Purple: #7014D1;
+  Darkest Grey: #222222;
+  Dark Grey: #333333;
+  Middle Grey : #6E6E6E;
+  Lighter Grey: #AEAEAE;
+  Light Grey: #E5E5E5;
+***********************************/
+body{
+  background-color: #6E6E6E;
+}
+
+nav{
+  background-color: #E5E5E5;
+}
+
+header h1{
+  color:#E5E5E5;
+}
